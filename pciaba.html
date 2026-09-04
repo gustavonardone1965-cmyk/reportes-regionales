@@ -465,7 +465,7 @@
 
             <div style="margin-top: 15px;">
                 <strong style="font-size: 13px; color: var(--text-muted);">Registro de Auditoría (Log ETL):</strong>
-                <div id="consoleLog" class="console-log"><div class="log-ok">[3:25:37 PM] Iniciando procesamiento de 1 archivo(s)...</div><div class="log-ok">[3:25:37 PM] Leyendo archivo: Kaizen_PDCA_v19_3671_Necochea.xlsx...</div><div class="log-ok">[3:25:37 PM] ✓ Franquicia '3857 - 3671' procesada con éxito (33 KPIs, 3 mejoras).</div><div class="log-ok">[3:25:37 PM] === PROCESAMIENTO COMPLETADO: 1 franquicia(s) consolidada(s) ===</div><div class="log-ok">[3:25:45 PM] Artefacto guardado exitosamente en su equipo (incluye los datos consolidados para reabrir sin volver a cargar los Excel).</div></div>
+                <div id="consoleLog" class="console-log"><div class="log-ok">[3:25:37 PM] Iniciando procesamiento de 1 archivo(s)...</div><div class="log-ok">[3:25:37 PM] Leyendo archivo: Kaizen_PDCA_v19_3671_Necochea.xlsx...</div><div class="log-ok">[3:25:37 PM] ✓ Franquicia '3857 - 3671' procesada con éxito (33 KPIs, 3 mejoras).</div><div class="log-ok">[3:25:37 PM] === PROCESAMIENTO COMPLETADO: 1 franquicia(s) consolidada(s) ===</div><div class="log-ok">[3:25:45 PM] Artefacto guardado exitosamente en su equipo (incluye los datos consolidados para reabrir sin volver a cargar los Excel).</div><div class="log-ok">[11:27:20 AM] Estado restaurado automáticamente desde el archivo guardado (1 franquicia(s)).</div></div>
             </div>
         </div>
 
@@ -473,14 +473,14 @@
         <div id="dashboardSection" class="card" style="display: block;">
             
             <div class="nav-tabs">
-                <button class="tab-btn active" onclick="switchTab('tabMatriz')">📊 Síntesis Matricial por KPI</button>
-                <button class="tab-btn" onclick="switchTab('tabReporteGestion')">📋 Reporte de Gestión PDCA</button>
+                <button class="tab-btn" onclick="switchTab('tabMatriz')">📊 Síntesis Matricial por KPI</button>
+                <button class="tab-btn active" onclick="switchTab('tabReporteGestion')">📋 Reporte de Gestión PDCA</button>
                 <button class="tab-btn" onclick="switchTab('tabFranquicia')">🏪 Vista por Franquicia Individual</button>
                 <button class="tab-btn" onclick="switchTab('tabGlobal')">📈 Resumen Ejecutivo Global</button>
             </div>
 
             <!-- PESTAÑA 1: SÍNTESIS MATRICIAL POR KPI -->
-            <div id="tabMatriz" class="tab-content active">
+            <div id="tabMatriz" class="tab-content">
                 <div class="control-bar">
                     <div>
                         <h3 style="margin: 0; color: var(--primary);">Matriz Consolidada de KPIs vs. Franquicias</h3>
@@ -708,7 +708,7 @@
             </div>
 
             <!-- PESTAÑA 2: REPORTE DE GESTIÓN PDCA -->
-            <div id="tabReporteGestion" class="tab-content">
+            <div id="tabReporteGestion" class="tab-content active">
                 <div class="control-bar">
                     <div>
                         <h3 style="margin: 0; color: var(--primary);">Reporte Ejecutivo Matricial: Desempeño y Demoras PDCA</h3>
